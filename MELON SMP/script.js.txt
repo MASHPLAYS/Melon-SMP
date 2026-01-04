@@ -1,0 +1,47 @@
+// Function to Copy IP to Clipboard
+function copyIp() {
+    const ip = "melonsmp.fun";
+    navigator.clipboard.writeText(ip).then(() => {
+        // Visual Feedback
+        const btns = [document.getElementById("heroCopyBtn"), document.getElementById("navCopyBtn")];
+        
+        btns.forEach(btn => {
+            if(btn) {
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> IP Copied!';
+                btn.style.borderColor = "#4caf50";
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            }
+        });
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
+// Mobile Menu Toggle
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+// Smooth Scroll adjustment for sticky header
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        navLinks.classList.remove("active"); // Close menu on click
+        
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        const navHeight = document.querySelector('.navbar').offsetHeight;
+
+        window.scrollTo({
+            top: targetSection.offsetTop - navHeight,
+            behavior: 'smooth'
+        });
+    });
+});

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Melon SMP - The friendliest Survival Multiplayer Minecraft server. Lag-free, semi-vanilla, and 24/7 uptime. Play at melonsmp.fun">
+    <meta name="keywords" content="Minecraft SMP, Melon SMP, Survival Server, Minecraft Survival, melonsmp.fun">
+    <title>Melon SMP | The Freshest Minecraft Survival Server</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="melon-icon">🍉</span> MELON <span class="highlight">SMP</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#discord">Community</a></li>
+        </ul>
+        <div class="nav-btn">
+            <button onclick="copyIp()" class="btn-copy-nav" id="navCopyBtn">
+                <i class="fas fa-copy"></i> melonsmp.fun
+            </button>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span class="text-gradient">Melon SMP</span></h1>
+            <p class="hero-subtitle">A friendly survival multiplayer experience with smooth gameplay, an active economy, and a community that feels like family.</p>
+            
+            <div class="hero-buttons">
+                <button onclick="copyIp()" class="btn btn-primary" id="heroCopyBtn">
+                    <i class="fas fa-gamepad"></i> Copy IP: melonsmp.fun
+                </button>
+                <a href="#discord" class="btn btn-secondary">
+                    <i class="fab fa-discord"></i> Join Discord
+                </a>
+            </div>
+
+            <div class="server-status">
+                <span class="status-dot"></span> Status: <span class="status-text">Online 24/7</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Melon SMP?</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon-box"><i class="fas fa-heart"></i></div>
+                    <h3>Friendly Community</h3>
+                    <p>We prioritize a toxicity-free environment. Our players and staff are welcoming to everyone, from beginners to veterans.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Lag-Free Gameplay</h3>
+                    <p>Optimized for performance. Enjoy smooth survival mechanics without the frustration of server lag.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Regular Events</h3>
+                    <p>Participate in weekly boss battles, building contests, and treasure hunts to win unique in-game rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-dark section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Server Features</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="features-wrapper">
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Survival Multiplayer:</strong> Classic Semi-Vanilla experience.</li>
+                    <li><i class="fas fa-shield-alt"></i> <strong>Land Claiming:</strong> Protect your builds easily.</li>
+                    <li><i class="fas fa-coins"></i> <strong>Player Economy:</strong> Buy, sell, and trade with others.</li>
+                    <li><i class="fas fa-user-shield"></i> <strong>Active Staff:</strong> 24/7 moderation to keep you safe.</li>
+                    <li><i class="fas fa-desktop"></i> <strong>Cross-Play:</strong> Java & Bedrock supported.</li>
+                    <li><i class="fas fa-skull"></i> <strong>Anti-Cheat:</strong> Fair play for everyone.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Server Rules</h2>
+                <p>Keep it fun, keep it fair.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="rules-container">
+                <div class="rule-item">
+                    <span class="rule-number">1</span>
+                    <div class="rule-text">
+                        <h4>No Hacking or Cheating</h4>
+                        <p>X-ray, fly hacks, and auto-clickers are strictly prohibited.</p>
+                    </div>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-number">2</span>
+                    <div class="rule-text">
+                        <h4>No Griefing</h4>
+                        <p>Do not destroy other players' builds or steal their items.</p>
+                    </div>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-number">3</span>
+                    <div class="rule-text">
+                        <h4>Be Respectful</h4>
+                        <p>No hate speech, harassment, or toxic behavior in chat.</p>
+                    </div>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-number">4</span>
+                    <div class="rule-text">
+                        <h4>No Exploits</h4>
+                        <p>Do not abuse bugs. Report them to staff immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Join -->
+    <section id="join" class="section-dark section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Join</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <p>Open Minecraft (Java or Bedrock)</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <p>Click "Multiplayer" > "Add Server"</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <p>Enter Name: <strong>Melon SMP</strong></p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <p>Enter IP: <strong class="highlight-text">melonsmp.fun</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord/Community -->
+    <section id="discord" class="discord-banner">
+        <div class="container discord-content">
+            <i class="fab fa-discord discord-logo-bg"></i>
+            <h2>Join Our Community</h2>
+            <p>Chat with other players, get support, and see announcements.</p>
+            <a href="#" class="btn btn-discord-large">Join Discord Server</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Melon SMP</h3>
+                <p>The freshest survival experience.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#rules">Rules</a>
+                <a href="#discord">Discord</a>
+                <a href="#">Store</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2024 Melon SMP. Not affiliated with Mojang AB.</p>
+                <p>Server IP: melonsmp.fun</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
